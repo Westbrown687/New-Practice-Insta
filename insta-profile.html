@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Profile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: Roboto, Arial;
+        margin: 0;
+        padding-top: 70px;
+      }
+      .profile-grid {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+      }
+      .profile-data {
+        display: flex;
+        align-items: center;
+      }
+      .profile-details {
+        width: 200px;
+      }
+      .profile-follow {
+        flex: 1;
+      }
+      .image-button {
+        position: relative;
+        margin-bottom: 20px;
+        margin-left: 20px;
+      }
+
+      /* Circular gradient border container */
+      .profile-image-wrapper {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: linear-gradient(45deg, red, orange, yellow, green);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: relative;
+      }
+
+      /* Inner white circle to create border effect */
+      .profile-image-inner {
+        width: 108px;
+        height: 108px;
+        border-radius: 50%;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+
+      .profile-image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: none;
+      }
+
+      .add-button {
+        position: absolute;
+        bottom: -5px;
+        right: -5px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 3px solid white;
+        color: white;
+        background-color: rgb(48, 179, 255);
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      .profile-figs {
+        font-weight: bold;
+        font-size: 20px;
+        margin-left: 8px;
+      }
+      .profile-text {
+        font-weight: 400;
+      }
+      .travel-button {
+        font-size: 15px;
+        text-align: center;
+        font-weight: 700;
+        background-color: rgb(216, 216, 216);
+        border: none;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        padding: 3px;
+        margin-left: 18px;
+        width: 133px;
+      }
+      .thread-img {
+        height: 15px;
+      }
+      .profile-edit {
+        display: flex;
+      }
+      .edit-button,
+      .share-button {
+        width: 400px;
+        height: 30px;
+        font-weight: 700;
+        background-color: rgb(216, 216, 216);
+        border: none;
+        font-size: 15px;
+        border-radius: 10px;
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="profile-grid">
+        <div class="image-button">
+          <div class="profile-image-wrapper">
+            <div class="profile-image-inner">
+              <img
+                class="profile-image"
+                src="Thumbnail/8e0480a6-685d-475d-94c4-ea5fb235495b.jpg"
+                alt=""
+              />
+            </div>
+            <button class="add-button">&#43;</button>
+          </div>
+        </div>
+        <div class="profile-data">
+          <div class="profile-details">
+            <div class="profile-figs">75</div>
+            <div class="profile-text">Posts</div>
+          </div>
+          <div class="profile-details">
+            <div class="profile-figs">237K</div>
+            <div class="profile-text">Followers</div>
+          </div>
+          <div class="profile-follow">
+            <div class="profile-figs">240</div>
+            <div class="profile-text">Followings</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button class="travel-button">
+          <span class="travel-span">
+            <img class="thread-img" src="thumbnail/threads.png" alt="" />
+          </span>
+          travel_profile
+        </button>
+
+        <div class="profile-edit">
+          <button class="edit-button">Edit Profile</button>
+          <button class="share-button">Share Profile</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
