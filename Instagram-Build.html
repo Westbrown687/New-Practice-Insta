@@ -18,162 +18,88 @@
       rel="stylesheet"
     />
 
-    <style>
-      body {
-        margin: 0;
-        background-color: rgb(26, 23, 23);
-        color: white;
-        font-family: Roboto, Arial;
-        padding-bottom: 5000px;
-      }
-      .profile-img {
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-      }
-      .profile-img-con {
-        width: 105px;
-        height: 105px;
-        border-radius: 50%;
-        background: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-      }
-      .profile-header {
-        padding-top: 50px;
-        display: flex;
-        padding-left: 50px;
-      }
-      .profile-det-container {
-        display: flex;
-        flex-direction: column;
-        padding-right: 100px;
-        padding-top: 0px;
-        width: 450px;
-      }
-      .details-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .profile-details {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      .profile-details .following {
-        font-size: 20px;
-      }
-      .profile-image-wrapper {
-        width: 122px;
-        height: 122px;
-        border-radius: 50%;
-        background: linear-gradient(
-          45deg,
-          rgb(68, 84, 104),
-          rgb(64, 45, 210),
-          rgb(43, 32, 62),
-          green
-        );
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        position: relative;
-      }
-      .edit-profile-container {
-        margin-top: 57px;
-        height: 45px;
-        width: 300px;
-        position: relative;
-        right: 34px;
-      }
-      .edit-button {
-        width: 550px;
-        height: 37px;
-        font-size: 23px;
-        text-align: center;
-        border-radius: 5px;
-        border: none;
-        font-family: mulish, Arial;
-        color: rgb(87, 84, 84);
-      }
-      .edit-button:hover {
-        cursor: pointer;
-        background-color: rgba(20, 101, 160, 0.927);
-        color: white;
-        box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.5);
-        transition: box-shadow 0.3s ease, transform 0.5s ease;
-        transform: scale(0.98) translateY(5px);
-      }
-      .image-box {
-        position: relative;
-        width: 180px;
-      }
-      .add-con {
-        background-color: white;
-        display: flex;
-        width: 20px;
-        border-radius: 50%;
-        border: none;
-        position: absolute;
-        bottom: 50px;
-        right: 59px;
-      }
-      .add-buttons {
-        height: 20px;
-      }
-    </style>
+    <link rel="stylesheet" href="insta-build-css/general.css" />
+    <link rel="stylesheet" href="insta-build-css/heading.css" />
+    <link rel="stylesheet" href="insta-build-css/content-element.css" />
   </head>
 
   <body>
     <div>
-      <div class="profile-header">
-        <div class="image-box">
-          <div class="profile-image-wrapper">
-            <div class="profile-img-con">
+      <div class="insta-grid-container">
+        <div class="profile-header">
+          <div class="image-box">
+            <div class="profile-image-wrapper">
+              <div class="profile-img-con">
+                <img
+                  class="profile-img"
+                  src="Thumbnail/8e0480a6-685d-475d-94c4-ea5fb235495b.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="add-con">
               <img
-                class="profile-img"
-                src="Thumbnail/8e0480a6-685d-475d-94c4-ea5fb235495b.jpg"
+                src="Thumbnail/add_16911811.png"
+                class="add-buttons"
                 alt=""
               />
             </div>
           </div>
-          <div class="add-con">
-            <img src="Thumbnail/add_16911811.png" class="add-buttons" alt="" />
+
+          <div class="profile-det-container">
+            <div class="details-container">
+              <div class="profile-details">
+                <div class="following">159</div>
+                <div>posts</div>
+              </div>
+              <div class="profile-details">
+                <div class="following">13K</div>
+                <div>followers</div>
+              </div>
+
+              <div class="profile-details">
+                <div class="following">399</div>
+                <div>following</div>
+              </div>
+            </div>
+
+            <div class="edit-profile-container">
+              <button class="edit-button">Edit your profile</button>
+            </div>
           </div>
         </div>
 
-        <div class="profile-det-container">
-          <div class="details-container">
-            <div class="profile-details">
-              <div class="following">159</div>
-              <div>posts</div>
-            </div>
-            <div class="profile-details">
-              <div class="following">13K</div>
-              <div>followers</div>
-            </div>
-
-            <div class="profile-details">
-              <div class="following">399</div>
-              <div>following</div>
-            </div>
+        <div class="profile-data">
+          <div class="profile-data-id">
+            <div class="profile-id">Westbrown_Official</div>
           </div>
-
-          <div class="edit-profile-container">
-            <button class="edit-button">Edit your profile</button>
+          <div class="profile">
+            <div class="profile-text">I love music, and i play drum</div>
+          </div>
+          <div class="translation">
+            <div>see translation</div>
           </div>
         </div>
       </div>
-
       <div>
-        <div>I love music, and i play drum</div>
-        <div>###Greatness</div>
+        <div class="insta-content">
+          <div class="insta-content-rep">
+            <div class="nine-box-con">
+              <img class="nine-box" src="Thumbnail/nine-squares.png" alt="" />
+            </div>
+          </div>
+          <div class="outter-wrap">
+            <div class="hamburger-con">
+              <img src="Thumbnail/Hamburger_icon_white.svg" alt="" />
+            </div>
+          </div>
+          <div class="star-con">
+            <img class="star" src="Thumbnail/star.png" alt="" />
+          </div>
+          <div class="user-folder-container">
+            <img src="Thumbnail/user_7263450.png" alt="" />
+          </div>
+        </div>
       </div>
     </div>
   </body>

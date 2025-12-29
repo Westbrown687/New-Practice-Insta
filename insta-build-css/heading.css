@@ -1,0 +1,123 @@
+.profile-img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+      }
+      .profile-img-con {
+        width: 105px;
+        height: 105px;
+        border-radius: 50%;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+      .profile-header {
+        padding-top: 50px;
+        display: flex;
+      }
+      .profile-det-container {
+        display: flex;
+        flex-direction: column;
+        padding-right: 100px;
+        padding-top: 0px;
+        width: 450px;
+        justify-content: center;
+      }
+      .details-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .profile-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .profile-details .following {
+        font-size: 20px;
+      }
+      .profile-image-wrapper {
+        width: 122px;
+        height: 122px;
+        border-radius: 50%;
+        background: linear-gradient(
+          45deg,
+          rgb(68, 84, 104),
+          rgb(64, 45, 210),
+          rgb(43, 32, 62),
+          green
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: relative;
+      }
+      .edit-profile-container {
+        margin-top: 25px;
+        height: 45px;
+        width: 300px;
+        position: relative;
+        right: 30px;
+      }
+      .edit-button {
+        width: 550px;
+        height: 37px;
+        font-size: 23px;
+        text-align: center;
+        border-radius: 5px;
+        border: none;
+        font-family: mulish, Arial;
+        color: rgb(87, 84, 84);
+      }
+      .edit-button:hover {
+        cursor: pointer;
+        background-color: rgba(26, 71, 196, 0.623);
+        color: white;
+        box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.5);
+        transition: box-shadow 0.3s ease, transform 0.5s ease;
+        transform: scale(0.98) translateY(2px);
+      }
+      .image-box {
+        position: relative;
+        width: 180px;
+      }
+      .add-con {
+        background-color: white;
+        display: flex;
+        width: 20px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        bottom: 8px;
+        right: 71px;
+      }
+      .add-buttons {
+        height: 20px;
+      }
+      .insta-grid-container {
+        padding-left: 50px;
+      }
+      .profile-data .profile-id {
+        font-family: Roboto, Arial;
+        font-size: 20px;
+      }
+      .profile-data {
+        margin-top: 28px;
+        display: flex;
+        flex-direction: column;
+      }
+      .profile {
+        padding-top: 5px;
+        padding-bottom: 7px;
+      }
+      .profile div {
+        color: rgb(218, 214, 214);
+      }
+      .translation div {
+        color: rgb(218, 214, 214);
+      }
