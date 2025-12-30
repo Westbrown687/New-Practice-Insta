@@ -25,80 +25,10 @@
       rel="stylesheet"
     />
 
-    <style>
-      body {
-        background-color: rgb(11, 11, 28);
-        margin: 0px;
-      }
-      .portfolio-header {
-        display: flex;
-        background-color: transparent;
-        height: 60px;
-        padding-top: 20px;
-      }
-      .portfolio-header div {
-        color: white;
-      }
-      .header-A {
-        width: 150px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-left: 30px;
-        padding-right: 40px;
-        white-space: nowrap;
-      }
-      .header-A div {
-        font-family: Pacifico;
-        font-size: 20px;
-      }
-      .header-A span {
-        color: rgba(255, 255, 92, 0.84);
-      }
-      .header-B {
-        background-color: rgba(112, 128, 144, 0.068);
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-left: 0px;
-        padding-right: 0px;
-        width: 800px;
-        min-width: 500px;
-        max-width: 700px;
-        white-space: nowrap;
-        overflow: hidden;
-      }
-      .b-class {
-        display: flex;
-      }
-      .b-class div {
-        padding-right: 13px;
-        font-family: roboto, Arial;
-        font-size: 14px;
-        font-weight: 500;
-      }
-
-      .header-C {
-        width: 400px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .c-class {
-        display: flex;
-      }
-      .c-class button {
-        font-family: roboto, Arial;
-        border: none;
-        height: 40px;
-        width: 100px;
-        background-color: rgba(255, 255, 92, 0.84);
-      }
-    </style>
+    <link rel="stylesheet" href="p-web-css/profile-web.css" />
   </head>
   <body>
-    <div>
+    <div class="portfolio-container">
       <div class="portfolio-header">
         <div class="header-A">
           <div><span>Chi</span>ebuka . O</div>
@@ -121,7 +51,7 @@
               <div>Blog</div>
             </div>
             <div class="contact">
-              <div>contact</div>
+              <div>Contact</div>
             </div>
           </div>
         </div>
@@ -131,6 +61,58 @@
           </div>
         </div>
       </div>
+
+      <div class="portfolio-body">
+        <div class="portfolio-body-info">
+          <div class="intro">
+            <div>He<span>llo!!</span></div>
+          </div>
+
+          <div class="portfolio-info">
+            <div class="name">I'm Ojiako Chiebuka</div>
+            <div>Fullstack Web Developer</div>
+          </div>
+        </div>
+        <div class="portfolio-image">
+          <img
+            src="Thumbnail/close-up-portrait-professional-successful-young-african-american-man-red-hoodie-cross-arms-chest.png"
+            alt=""
+          />
+        </div>
+      </div>
     </div>
   </body>
 </html>
+<style>
+  .intro > div {
+    display: inline-block;
+    opacity: 0;
+    transform-origin: left center;
+  }
+  .intro > div.roll-in {
+    animation: rollIn 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  }
+  @keyframes rollIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-120%) rotate(-240deg) scale(0.8);
+    }
+    60% {
+      opacity: 1;
+      transform: translateX(10%) rotate(10deg) scale(1.02);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0) rotate(0) scale(1);
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const el = document.querySelector(".intro > div");
+    if (!el) return;
+    void el.offsetWidth; // force reflow
+    el.classList.add("roll-in");
+  });
+</script>
