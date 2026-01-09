@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .intro > div {
+        display: inline-block;
+        opacity: 0;
+        transform-origin: left center;
+      }
+      .intro > div.roll-in {
+        animation: rollIn 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+      }
+      @keyframes rollIn {
+        0% {
+          opacity: 0;
+          transform: translateX(-120%) rotate(-240deg) scale(0.8);
+        }
+        60% {
+          opacity: 1;
+          transform: translateX(10%) rotate(10deg) scale(1.02);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0) rotate(0) scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body></body>
+</html>

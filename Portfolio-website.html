@@ -25,7 +25,8 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="p-web-css/profile-web.css" />
+    <link rel="stylesheet" href="p-web-css/header.css" />
+    <link rel="stylesheet" href="p-web-css/body.css" />
   </head>
   <body>
     <div class="portfolio-container">
@@ -38,16 +39,16 @@
             <div class="home">
               <div>Home</div>
             </div>
-            <div>
+            <div class="about">
               <div>About</div>
             </div>
-            <div>
+            <div class="services">
               <div>Services</div>
             </div>
-            <div>
+            <div class="projects">
               <div>Projects</div>
             </div>
-            <div>
+            <div class="blog">
               <div>Blog</div>
             </div>
             <div class="contact">
@@ -81,38 +82,14 @@
         </div>
       </div>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const displayHello = document.querySelector(".intro > div");
+        if (!el) return;
+        void el.offsetWidth;
+        displayHello.className("active");
+      });
+    </script>
   </body>
 </html>
-<style>
-  .intro > div {
-    display: inline-block;
-    opacity: 0;
-    transform-origin: left center;
-  }
-  .intro > div.roll-in {
-    animation: rollIn 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-  }
-  @keyframes rollIn {
-    0% {
-      opacity: 0;
-      transform: translateX(-120%) rotate(-240deg) scale(0.8);
-    }
-    60% {
-      opacity: 1;
-      transform: translateX(10%) rotate(10deg) scale(1.02);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0) rotate(0) scale(1);
-    }
-  }
-</style>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const el = document.querySelector(".intro > div");
-    if (!el) return;
-    void el.offsetWidth; // force reflow
-    el.classList.add("roll-in");
-  });
-</script>

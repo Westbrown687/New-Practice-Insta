@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background: -webkit-linear-gradient(
+          left,
+          #003366,
+          #004080,
+          #0059b3,
+          #0073e6
+        );
+        margin: 0;
+        font-family: Roboto, Arial;
+        display: flex;
+        justify-content: center;
+        height: 1000px;
+      }
+      .form-container {
+        background-color: white;
+        width: 450px;
+        border-radius: 4px;
+        height: 350px;
+      }
+      .login-container {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+      }
+      .login-container > div {
+        font-weight: 600;
+        font-size: 35px;
+      }
+      .login-header{
+        display: flex;
+        border-width: 1px;
+        border-style: solid;
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+      .login-header > .head-wrapper{
+        width: 50px;
+        background:-webkit-linear-gradient(left,
+          #003366,
+          #004080,
+          #0059b3,
+          #0073e6)
+      }
+      .login-header > .login {
+        font-size: 17px;
+        font-weight: 500;
+      }
+      .login-header > .signup{
+        font-size: 17px;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="login-container">
+        <div>Login Form</div>
+      </div>
+
+      <div class="login-header">
+        <div class="login">
+          <div>Login</div>
+        </div>
+        <div class="signup">
+          <div>Sign&#45up</div>
+        </div>
+        <div class="head-wrapper"> </div>
+      </div>
+    </div>
+  </body>
+</html>
